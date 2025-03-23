@@ -89,7 +89,7 @@ body {
     font-size: 1rem;
     cursor: pointer;
     transition: opacity 0.2s;
-    height: 46px;
+    max-height: 46px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,7 +159,7 @@ input[type="number"] {
     
     .container {
         padding: 1rem;
-        min-height: 100vh;
+        max-height: 95vh;
         border-radius: 0;
         overflow: auto;
     }

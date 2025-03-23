@@ -80,7 +80,7 @@ function renderCalculatorPage(container, page) {
     calculateBtn.addEventListener('click', () => {
         const values = Array.from(document.querySelectorAll('input')).map(i => parseFloat(i.value));
         calculationResult = page.calculate(...values);
-        resultDiv.textContent = `Resultado: ${calculationResult.toFixed(2)}`;
+        resultDiv.textContent = `Sódio corrigido é ${calculationResult.toFixed(2)}`;
         document.getElementById('btn-next').disabled = false;
     });
     container.appendChild(calculateBtn);

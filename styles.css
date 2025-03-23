@@ -16,6 +16,8 @@ body {
     line-height: 1.6;
     padding: 1rem;
     background-color: #f5f6fa;
+    height: 100vh;
+    display: flex;
 }
 
 .container {
@@ -28,6 +30,8 @@ body {
     min-height: 90vh;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    overflow: hidden;
 }
 
 .page-header {
@@ -60,6 +64,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: auto;
 }
 
 .action-instruction {
@@ -84,6 +89,10 @@ body {
     font-size: 1rem;
     cursor: pointer;
     transition: opacity 0.2s;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .vt-btn {
@@ -136,6 +145,10 @@ input[type="number"] {
     border: 2px solid #ddd;
     border-radius: var(--border-radius);
     font-size: 1rem;
+}
+
+.calculator-inputs button {
+    height: 46px;
 }
 
 @media (max-width: 600px) {

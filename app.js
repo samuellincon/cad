@@ -31,7 +31,7 @@ function renderPage() {
 function renderActionPage(container, page) {
     const instruction = document.createElement('p');
     instruction.textContent = page.instruction;
-    instruction.style.margin = '2rem 0';
+    instruction.textContent = page.instruction;
     container.appendChild(instruction);
 
     if (page.extraInstruction) {

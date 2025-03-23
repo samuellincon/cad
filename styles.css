@@ -1,0 +1,140 @@
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --border-radius: 12px;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    padding: 1rem;
+    background-color: #f5f6fa;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.page-header h1 {
+    font-size: 1.8rem;
+    color: #CB6CE6;
+    margin: 0;
+}
+
+.flowchart-link svg {
+    color: #CB6CE6;
+    transition: transform 0.2s;
+}
+
+.flowchart-link:hover svg {
+    transform: scale(1.1);
+}
+
+.page-content {
+    flex: 1;
+    padding: 1rem 0;
+}
+
+.page-navigation {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.nav-btn {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.vt-btn {
+    border: #CB6CE6 solid 0.5rem;
+    background: white;
+    box-shadow: var(--box-shadow);
+    color: #CB6CE6;
+}
+
+.px-btn {
+    background: #CB6CE6;
+    box-shadow: var(--box-shadow);
+    color: white;
+}
+
+.nav-btn:hover {
+    opacity: 0.9;
+}
+
+.alert-box {
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin: 1rem 0;
+}
+
+.choice-item {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.choice-item.selected {
+    border-color: var(--primary-color);
+    background: #f8f9fa;
+}
+
+.calculator-inputs {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+input[type="number"] {
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+        min-height: 95vh;
+    }
+    
+    .page-header h1 {
+        font-size: 1.4rem;
+    }
+}
+
